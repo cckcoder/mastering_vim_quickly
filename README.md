@@ -22,4 +22,28 @@ my $learn;
 my $quickly;
 ```
 
+```
+MY $i;
+MY $learn;
+MY $quickly;
+```
 ref: `:help change.txt`
+
+## Substitution
+
+* Replace only the whole word
+    - for example wanna Substitue word `is` with `was` from the sentence below:
+
+        `This sentence is short.`
+    - Yay just use `:s/is/was/g` simple, right? But look at what we get:
+        
+        `Thws sentence was short.`
+    - Something's wrong only whole word should be matched. Here's how to correct
+      command would look:
+
+        `:s/\<is\>\was\g`
+    - Now the result will be correct:
+    
+        `This sentence was short.`
+
+
