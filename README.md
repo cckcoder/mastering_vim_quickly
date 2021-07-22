@@ -46,4 +46,12 @@ ref: `:help change.txt`
     
         `This sentence was short.`
 
+* Replace either string1 or string2 with a new word
 
+    `That pretty girl did good on test.`
+
+    - Running the following command:
+        `:s/\(pretty\|good\)/awesome/g `
+
+    - You should get a result like:
+        `That awesome girl did awesome on test.`
